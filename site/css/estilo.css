@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+    background: #2a9d8f; /* teal médio */
+    padding: 20px;
+}
+
+/* SECTION */
+section {
+    grid-area: main;
+    background: #76c7c0; /* teal claro */
+    padding: 20px;
+}
+
+/* ARTICLES (opcional, para diferenciar) */
+article {
+    background: #a8dadc; /* teal bem claro */
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* ASIDE */
+aside {
+    grid-area: aside;
+    background: #1f7a7a; /* teal mais escuro */
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background: #264653; /* teal escuro puxando pro azul */
+    padding: 20px;
+    color: white;
+}
